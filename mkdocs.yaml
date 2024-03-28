@@ -1,7 +1,7 @@
 site_name: my-quarkus-app
 site_description: A cool quarkus app
-repo_url: https://gitlab-gitlab.apps.cluster-mmdsx.sandbox1108.opentlc.com/development/my-quarkus-app
-edit_uri: edit/master/docs
+repo_url: https://github.com/edubois10/rhdh_techdocs_plugin
+edit_uri: edit/main/docs
 
 plugins:
   - techdocs-core

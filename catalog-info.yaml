@@ -4,14 +4,9 @@ metadata:
   name: "my-test"
   description: "A cool quarkus app test"
   annotations:
-    argocd/app-name: my-quarkus-app-dev
-    backstage.io/kubernetes-id: my-quarkus-app
-    backstage.io/kubernetes-namespace: my-quarkus-app-dev
-    janus-idp.io/tekton: my-quarkus-app
     backstage.io/source-location: url:https://github.com/edubois10/rhdh_techdocs_plugin
-    backstage.io/techdocs-ref: url:https://github.com/edubois10/rhdh_techdocs_plugin
+    backstage.io/techdocs-ref: url:https://github.com/edubois10/rhdh_techdocs_plugin/docs
     github.com/project-slug: edubois10/rhdh_techdocs_plugin
-    quay.io/repository-slug: "quayadmin/my-quarkus-app"
   tags:
     - java
     - quarkus
@@ -28,15 +23,3 @@ spec:
   owner: "edubois10"
   providesApis:
     - "my-quarkus-app"
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: "my-quarkus-app"
-  description: "A cool quarkus app"
-spec:
-  type: openapi
-  lifecycle: production
-  owner: "edubois10"
-  definition:
-    $text: ./openapi.yaml
